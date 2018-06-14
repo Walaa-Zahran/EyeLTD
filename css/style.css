@@ -1,0 +1,277 @@
+*{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+body{
+	width:100%;
+	margin: 0;
+	padding:0;
+	font-family: 'Ubuntu', sans-serif;
+}
+/*styling navbar*/
+nav{
+	background:-webkit-gradient(linear,left top, right top,from(#6b53c1),to(#19a4de));
+	background:-webkit-linear-gradient(left,#6b53c1,#19a4de);
+	background:-o-linear-gradient(left,#6b53c1,#19a4de);
+	background:linear-gradient(to right,#6b53c1,#19a4de);
+
+}
+nav ul a{
+	color:white!important;
+	font-weight: lighter;
+	font-size: 22px;
+}
+.dropdown-menu a{
+	color:#595959!important;
+}
+nav ul a:hover{
+	border:1px solid white;
+	border-image-source: url(../imgs/line-white.png);
+	border-top:0;
+	border-image-slice: 21;
+	border-image-width: 6;
+	border-image-outset: 1;
+	background-repeat: no-repeat;
+}
+.dropdown-menu a:hover{
+	border:none;
+}
+/*styling header*/
+.header{
+	
+	background: url('../imgs/eye-min.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:100vh;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	}
+.header h1{
+	display: inline-block;
+	font-size: 50px;
+	font-family: 'Ubuntu', sans-serif;
+    font-weight:lighter;
+	background:-webkit-gradient(linear,left top, right top,from(#6b53c1),to(#19a4de));
+	background:-webkit-linear-gradient(left,#6b53c1,#19a4de);
+	background:-o-linear-gradient(left,#6b53c1,#19a4de);
+	background:linear-gradient(to right,#6b53c1,#19a4de);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header .img{
+	text-align: center;
+	position: relative;
+	bottom: -180px;
+	background-color:;
+	background-clip:content-box;
+
+}
+.scroll-downs {
+  position: absolute;
+  top: 150;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #19a4de;
+  border-radius: 25px;
+  opacity: 0.75;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #19a4de;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+  -webkit-animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+          animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes scroll {
+  0% { opacity: 0; }
+  10% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
+  100% { -webkit-transform: translateY(15px); transform: translateY(15px); opacity: 0;}
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
+  100% { -webkit-transform: translateY(15px); transform: translateY(15px); opacity: 0;}
+}
+
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+      .header{
+        background-image: none;
+    }
+
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+          .header {
+        background-image: none;
+    }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+          .header {
+        background-image: none;
+    }
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+          .header {
+        background-image: none;
+    }
+
+}
+.header .img img{
+	background-color:#bababa;
+	border-radius: 45%;
+	opacity: 0.9;
+}
+.header h1 span{
+	font-size: 50px;
+	font-family: 'Ubuntu', sans-serif;
+    font-weight:bold;
+	background:-webkit-gradient(linear,left top, right top,from(#6b53c1),to(#19a4de));
+	background:-webkit-linear-gradient(left,#6b53c1,#19a4de);
+	background:-o-linear-gradient(left,#6b53c1,#19a4de);
+	background:linear-gradient(to right,#6b53c1,#19a4de);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header img{
+	display: inline-block;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	
+}
+/*styling section-1*/
+.shapes{
+	background:url('../imgs/shapes-min.png');
+	background-repeat: no-repeat;
+    background-position: center;}
+.section-1{
+	height:100%;
+	width: 100%;
+	display: table;
+}
+.section-1 .content{
+	display: table-cell;
+	vertical-align: middle;
+}
+.section-1 img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto; 
+	padding-top: 20px;
+	margin-top:20px;   
+}
+.section-1 h2{
+	text-align: center;
+	color:#16a7df;
+	font-family: 'Ubuntu',sans-serif;
+	font-weight: lighter;
+	font-size: 50px;
+	margin:0px;
+	padding: 0px;
+	margin-top: -50px;
+}
+.section-1 span{
+	
+	color:#16a7df;
+	font-family: 'Ubuntu',sans-serif;
+	font-weight: lighter;
+	font-size: 30px;	
+	text-align: center;
+	display: block;
+	margin-top: 0px;
+}
+.section-1 p{
+	text-align: center;
+	color:#707070;
+	font-size: 28px;
+	font-family: 'Ubuntu',sans-serif;
+}
+/*styling section-2*/
+.section-2{
+	color:#fff;
+	background:-webkit-gradient(linear,left top, right top,from(#6b53c1),to(#19a4de));
+	background:-webkit-linear-gradient(left,#6b53c1,#19a4de);
+	background:-o-linear-gradient(left,#6b53c1,#19a4de);
+	background:linear-gradient(to right,#6b53c1,#19a4de);
+}
+.section-2 h2,.section-2 span{
+	text-transform: uppercase;
+}
+.section-2 h2{
+	font-size: 50px;
+	font-weight: lighter;
+}
+.section-2 span{
+	font-size: 35px;
+	font-weight: lighter;
+	font-style: italic;
+}
+.section-2 p{
+	font-size: 28px;
+	font-weight: lighter;
+	width:90%;
+	margin:0 auto;
+}
+/*styling footer*/
+footer p{
+	color:#707070;
+	font-size: 15px;
+	font-family: 'Ubuntu',sans-serif;
+}
+footer p.first{
+	font-weight: bold;
+	font-size: 15px;
+	font-family: 'Ubuntu',sans-serif;
+}
+footer .copyright{
+   font-size: 12px;
+   color:#707070;
+   font-family: 'Ubuntu',sans-serif;
+   font-weight: lighter;
+}
+footer{
+	background-color: #ffffff;
+}
+h2{
+	font-size: 40px;
+}
+p{
+	font-size: 28px;
+}
